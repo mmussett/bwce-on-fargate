@@ -1,5 +1,5 @@
 .DS_Store
-tf/.terraform/**
+.terraform
 tf/terraform.tfstate
 tf/terraform/tfstate.backup
 tf/main.old
