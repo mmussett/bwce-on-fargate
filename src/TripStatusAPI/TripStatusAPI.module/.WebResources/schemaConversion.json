@@ -1,0 +1,22 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/TripStatusAPI.module/Service Descriptors/mytest.module.Process-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1559801301607"
+    },
+    {
+        "jsonSchemaLocation": "/TripStatusAPI.module/Service Descriptors/mytest.module.TripService-Trip.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1559801301607"
+    },
+    {
+        "jsonSchemaLocation": "/TripStatusAPI.module/Service Descriptors/mytest.module.TripService-trip.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1559801301607"
+    },
+    {
+        "jsonSchemaLocation": "/TripStatusAPI.module/Service Descriptors/mytest.module.TripService-Trips.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1559801301607"
+    }
+]}

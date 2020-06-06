@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1559801301607" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1559801301607">
+  <complexType name="testElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="passengerId" type="integer"/>
+      <element maxOccurs="1" minOccurs="0" name="pnr" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="originName" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="originCode" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="destinationName" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="destinationCode" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="departureDate" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="arrivalDate" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="departureTime" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="arrivalTime" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="airline" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="flightNumber" type="integer"/>
+      <element maxOccurs="1" minOccurs="0" name="gateNumber" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="hasStopover" type="boolean"/>
+      <element maxOccurs="1" minOccurs="0" name="flightStatus" type="string"/>
+    </sequence>
+  </complexType>
+  <element name="testElement" type="tns:testElementType"/>
+  <complexType name="testElementArrayType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" ref="tns:testElement"/>
+    </sequence>
+  </complexType>
+  <element name="testElementArray" type="tns:testElementArrayType"/>
+</schema>

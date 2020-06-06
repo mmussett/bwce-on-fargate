@@ -1,0 +1,111 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Trips",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/trips" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-trips",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a testElement to be returned",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/testElement",
+                "uniqueItems" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/trips/{pnr}" : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "tripByPNR",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pnr",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a testElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/testElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "testElement" : {
+      "type" : "object",
+      "properties" : {
+        "passengerId" : {
+          "type" : "integer"
+        },
+        "pnr" : {
+          "type" : "string"
+        },
+        "originName" : {
+          "type" : "string"
+        },
+        "originCode" : {
+          "type" : "string"
+        },
+        "destinationName" : {
+          "type" : "string"
+        },
+        "destinationCode" : {
+          "type" : "string"
+        },
+        "departureDate" : {
+          "type" : "string"
+        },
+        "arrivalDate" : {
+          "type" : "string"
+        },
+        "departureTime" : {
+          "type" : "string"
+        },
+        "arrivalTime" : {
+          "type" : "string"
+        },
+        "airline" : {
+          "type" : "string"
+        },
+        "flightNumber" : {
+          "type" : "integer"
+        },
+        "gateNumber" : {
+          "type" : "string"
+        },
+        "hasStopover" : {
+          "type" : "boolean"
+        },
+        "flightStatus" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
