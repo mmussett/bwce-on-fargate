@@ -1,3 +1,7 @@
+data "aws_ecs_task_definition" "app" {
+  task_definition = "${aws_ecs_task_definition.app.family}"
+}
+
 resource "aws_ecs_task_definition" "app" {
   depends_on = [aws_alb_listener.front_end]
   family                   = "app"
