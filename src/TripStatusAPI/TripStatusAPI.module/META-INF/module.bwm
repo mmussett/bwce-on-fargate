@@ -36,6 +36,7 @@
   <sca:property xmi:id="_-sB-QKWZEeqcKt7HAmA4Ww" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_-sLIMKWZEeqcKt7HAmA4Ww" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_-sM9YKWZEeqcKt7HAmA4Ww" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_92tP4KpnEeqJGpnqZdWvdA" name="localhost" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_ac63YIhaEemmno-9AtTzsA" name="ComponentTripService" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ac63YYhaEemmno-9AtTzsA" processName="mytest.tn.cicx.flightstatus.api.TripStatusAPI"/>
     <sca:service xmi:id="_dJt00IhaEemmno-9AtTzsA" name="trips">
