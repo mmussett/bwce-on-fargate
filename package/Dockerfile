@@ -7,3 +7,4 @@ LABEL description="Trip Status API"
 ADD TripStatusAPI_1.0.0.ear /
 
 EXPOSE 8080
+EXPOSE 7777
